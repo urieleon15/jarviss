@@ -1,6 +1,6 @@
 // Función para que J.A.R.V.I.S. salude con voz
 function saludar() {
-  const msg = new SpeechSynthesisUtterance("Hola, Uriel. Bienvenido al sistema yarbis (J.A.R.V.I.S.");
+  const msg = new SpeechSynthesisUtterance("Hola, Jacki. Bienvenida al sistema yarbis (J.A.R.V.I.S. Que disfrutes tu noche!");
   msg.lang = "es-ES";
   msg.rate = 1;
   window.speechSynthesis.speak(msg);
@@ -21,3 +21,4 @@ setInterval(() => {
   const hora = ahora.toLocaleTimeString();
   screen.innerHTML = `<p>Hora actual: ${hora}</p>`;
 }, 1000);
+
