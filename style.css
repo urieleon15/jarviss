@@ -1,0 +1,100 @@
+/* Reset simple */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* Fuente y fondo */
+body {
+  font-family: 'Courier New', monospace;
+  background: radial-gradient(circle at top left, #0f0f0f, #000000);
+  color: #ffb6c1; /* rosa pastel */
+}
+
+/* Contenedor general */
+.jarvis-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header */
+.jarvis-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.jarvis-header h1 {
+  font-size: 3em;
+  letter-spacing: 4px;
+  text-shadow: 0 0 10px #ffb6c1, 0 0 20px #ffb6c1;
+}
+
+.jarvis-header p {
+  margin-top: 5px;
+  font-size: 1.2em;
+  color: #ffc0cb; /* rosa claro */
+}
+
+/* Main panels */
+.jarvis-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Panel estilo J.A.R.V.I.S. */
+.panel {
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid #ffb6c1; /* borde rosa */
+  border-radius: 12px;
+  padding: 15px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 20px #ffb6c1 inset;
+  animation: glow 2s infinite alternate;
+}
+
+.panel h2 {
+  margin-bottom: 10px;
+  text-shadow: 0 0 5px #ffb6c1;
+}
+
+button {
+  background: transparent;
+  border: 1px solid #ffb6c1;
+  color: #ffb6c1;
+  padding: 8px 14px;
+  margin: 5px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.3s;
+}
+button:hover {
+  background: #ffb6c1;
+  color: #000;
+  box-shadow: 0 0 10px #ffb6c1;
+}
+
+.screen {
+  background: rgba(0,0,0,0.8);
+  border: 1px solid #ffb6c1;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer */
+.jarvis-footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #ffb6c1;
+}
+
+/* Animación neón */
+@keyframes glow {
+  0% { box-shadow: 0 0 5px #ffb6c1 inset; }
+  100% { box-shadow: 0 0 20px #ffb6c1 inset; }
+}

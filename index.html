@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J.A.R.V.I.S. Interface</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="jarvis-container">
+    <header class="jarvis-header">
+      <h1>J.A.R.V.I.S.</h1>
+      <p>Bienvenido, Uriel</p>
+    </header>
+
+    <main class="jarvis-main">
+      <section class="panel" id="status">
+        <h2>Status</h2>
+        <p>Sistemas funcionando correctamente</p>
+      </section>
+
+      <section class="panel" id="commands">
+        <h2>Comandos</h2>
+        <button onclick="saludar()">Saludar</button>
+        <button onclick="mostrarHora()">Mostrar hora</button>
+      </section>
+
+      <section class="panel" id="monitor">
+        <h2>Monitor</h2>
+        <div class="screen" id="screen">
+          <p>Analizando datos...</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="jarvis-footer">
+      Interfaz J.A.R.V.I.S. – Demo HTML/CSS/JS
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
